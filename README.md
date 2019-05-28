@@ -13,6 +13,7 @@ query {
     message
   }
 }
+```
 
 ## IMAGES BY TYPE
 ```json
@@ -27,6 +28,7 @@ query {
     message
   }
 }
+```
 
 ## IMAGES BY OWNER ID
 ```json
@@ -41,6 +43,7 @@ query {
     message
   }
 }
+```
 
 ## IMAGES BY TYPE AND OWNER ID
 ```json
@@ -55,6 +58,7 @@ query {
     message
   }
 }
+```
 
 ## IMAGES BY ID
 ```json
@@ -69,6 +73,7 @@ query {
     message
   }
 }
+```
 
 # MUTATIONS
 
