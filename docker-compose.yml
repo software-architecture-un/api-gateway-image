@@ -1,12 +1,15 @@
 version: '2.1'
 services:
-  academy-api:
+  api-gateway-2:
     build: .
     environment:
-      PORT: '5000'
+      PORT: '5001'
       SHOW_URLS: 'true'
-      ACTIVITIES_URL: '192.168.99.101'
-      ACTIVITIES_PORT: '4000'
-      ACTIVITIES_ENTRY: 'activities-ms/resources/activities'
+      IMAGES_URL: '192.168.99.101'
+      IMAGES_PORT: '3002'
+      IMAGES_ENTRY: 'images'
+      TYPE_IMAGES_ENTRY: 'typeimages'
+      OWNER_IMAGES_ENTRY: 'ownerimages'
+      TYPE_OWNER_IMAGES_ENTRY: 'typeownerimages'
     ports:
-      - '5000:5000'
+      - '5001:5001'

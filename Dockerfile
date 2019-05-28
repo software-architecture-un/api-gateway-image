@@ -1,14 +1,14 @@
 FROM node:carbon-slim
 
 # Create app directory
-WORKDIR /git/academy-api
+WORKDIR /git/api-gateway-2
 
 # Install app dependencies
-COPY package.json /git/academy-api/
+COPY package.json /git/api-gateway-2/
 RUN npm install
 
 # Bundle app source
-COPY . /git/academy-api/
+COPY . /git/api-gateway-2/
 RUN npm run prepublish
 
 CMD [ "npm", "run", "runServer" ]
